@@ -1,8 +1,0 @@
-#!name=yy.swgongshui.com 注入 Cookie
-#!desc=MITM 拦截 yy.swgongshui.com，用 http-request 脚本在请求头注入登录 Cookie
-
-[Script]
-http-request ^https?:\/\/yy\.swgongshui\.com\/ script-path=https://raw.githubusercontent.com/TheWuSi/LoonScript/main/yy-cookie.js, tag=yy-cookie
-
-[Mitm]
-hostname = yy.swgongshui.com
